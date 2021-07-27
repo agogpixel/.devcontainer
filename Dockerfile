@@ -5,6 +5,8 @@ RUN apk add --no-cache --update \
     git \
     git-lfs \
     iputils \
+    nodejs \
+    npm \
     openssh \
     openssh-client \
     openssh-keygen \
