@@ -1,0 +1,8 @@
+.github/
+.dockerignore
+.editorconfig
+devcontainer.json
+Dockerfile
+LICENSE
+README.md
+test.sh

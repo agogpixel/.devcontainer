@@ -1,0 +1,37 @@
+{
+	"name": "AgogPixel",
+	"build": {
+		"dockerfile": "Dockerfile",
+	},
+	"mounts": [
+		"source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind",
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/mnt/ssh-localhost,type=bind,consistency=cached,readonly"
+	],
+	"overrideCommand": false,
+	"remoteEnv": {
+		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}",
+		"CONTAINER_WORKSPACE_FOLDER": "${containerWorkspaceFolder}"
+	},
+	"settings": {},
+	"extensions": [
+		"alefragnani.bookmarks",
+		"coenraads.bracket-pair-colorizer-2",
+		"davidanson.vscode-markdownlint",
+		"eamodio.gitlens",
+		"editorconfig.editorconfig",
+		"gruntfuggly.todo-tree",
+		"mads-hartmann.bash-ide-vscode",
+		"ms-azuretools.vscode-docker",
+		"mutantdino.resourcemonitor",
+		"oderwat.indent-rainbow",
+		"pkief.material-icon-theme",
+		"redhat.vscode-xml",
+		"redhat.vscode-yaml",
+		"rogalmic.bash-debug",
+		"timonwong.shellcheck",
+		"wayou.vscode-todo-highlight",
+		"yzhang.markdown-all-in-one"
+	],
+	"initializeCommand": "docker pull agogpixel/foundation-dfromd:latest",
+	"remoteUser": "non-root"
+}
