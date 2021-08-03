@@ -19,6 +19,7 @@
 		"davidanson.vscode-markdownlint",
 		"eamodio.gitlens",
 		"editorconfig.editorconfig",
+		"esbenp.prettier-vscode",
 		"gruntfuggly.todo-tree",
 		"mads-hartmann.bash-ide-vscode",
 		"ms-azuretools.vscode-docker",
