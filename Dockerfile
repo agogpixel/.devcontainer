@@ -12,3 +12,6 @@ RUN apk add --no-cache --update \
     openssh-keygen \
     openssh-keysign \
     wget
+
+RUN npm install --global \
+    cordova
